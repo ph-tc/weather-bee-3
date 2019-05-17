@@ -272,100 +272,93 @@
 		/*TEMPERATURE*/
 
 		.temperature {
-			padding-top: 20px;
+			padding-top: 50px;
 		}
 
 		.temperature .inner {
 			text-align: center;
 		}
 
-		.temperature .your-city {
-			font-family: 'TT Polls', sans-serif;
-			font-size: 16px;
-			font-weight: 300;
-			color: #eee;
-		}
-
-		.temperature .location {
-			display: block;
-			margin: 0 auto;
-			padding-left: 25px;
-			font-family: 'TT Polls', sans-serif;
-			font-size: 16px;
-			font-weight: 300;
-			line-height: 30px;
-			color: #ccc;
+		.temperature .inner button {
 			border: none;
 			background-color: transparent;
-			background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'%3E%3Cpath d='M11 11l1.256 5L16 6 6 9.75 11 11zm1-11C6.478 0 2 4.395 2 9.815 2 15.32 6.375 19.083 12 24c5.625-4.917 10-8.68 10-14.185C22 4.395 17.522 0 12 0zm0 18c-4.419 0-8-3.582-8-8s3.581-8 8-8 8 3.582 8 8-3.581 8-8 8z' fill='%23eee'/%3E%3C/svg%3E%0A");
-			-webkit-background-size: 20px;
-			background-size: 20px;
+		}
+
+		.temperature .inner .icon {
+			width: 60px;
+			height: 60px;
+			margin: 0 auto 20px;
+			background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'%3E%3Cpath d='M11 11l1.256 5L16 6 6 9.75 11 11zm1-11C6.478 0 2 4.395 2 9.815 2 15.32 6.375 19.083 12 24c5.625-4.917 10-8.68 10-14.185C22 4.395 17.522 0 12 0zm0 18c-4.419 0-8-3.582-8-8s3.581-8 8-8 8 3.582 8 8-3.581 8-8 8z' fill='%23eee'/%3E%3C/svg%3E");
+			-webkit-background-size: contain;
+			background-size: contain;
 			background-position: 0 center;
 			background-repeat: no-repeat;
 		}
 
-		.temperature .degrees {
-			position: relative;
-			display: inline-block;
-			padding-right: 60px;
+		.temperature .inner p {
 			font-family: 'TT Polls', sans-serif;
-			font-size: 60px;
+			font-size: 30px;
 			font-weight: normal;
 			color: #eee;
+			line-height: 30px;
 		}
 
-		.temperature .degrees::after {
-			content: '';
-			position: absolute;
-			top: 50%;
-			right: 0;
-			transform: translateY(-55%);
-			display: block;
-			width: 60px;
-			height: 60px;
-			background-image: url("data:image/svg+xml,%3Csvg height='454pt' viewBox='0 0 454 454' width='454pt' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M375.809 227c0 82.184-66.625 148.809-148.809 148.809S78.191 309.184 78.191 227 144.816 78.191 227 78.191 375.809 144.816 375.809 227zm0 0' fill='%23fabe02'/%3E%3Cpath d='M227 78.2a150.13 150.13 0 0 0-17.39 1.042c74.882 8.875 131.288 72.363 131.288 147.77s-56.406 138.89-131.289 147.765c54.871 6.47 108.809-17.996 140.086-63.539 31.278-45.547 34.746-104.672 9.004-153.562C332.961 108.789 282.25 78.187 227 78.199zm-87.602 222.32a6.982 6.982 0 0 1-5.597-2.762 120.067 120.067 0 0 1-3.52-4.89 6.997 6.997 0 0 1 1.836-9.727 6.997 6.997 0 0 1 9.727 1.836c1 1.464 2.035 2.902 3.11 4.312a7 7 0 0 1-5.555 11.23zm-14.261-24.93a7.01 7.01 0 0 1-6.485-4.356A116.364 116.364 0 0 1 110 227c0-3.867 3.133-7 7-7s7 3.133 7 7a102.44 102.44 0 0 0 7.602 38.938 7.01 7.01 0 0 1-6.48 9.652zm0 0' fill='%23f59a1d'/%3E%3Cpath d='M227 50.164c-3.867 0-7-3.133-7-7V7c0-3.867 3.133-7 7-7s7 3.133 7 7v36.164c0 3.867-3.133 7-7 7zm-88.398 23.691a7 7 0 0 0 2.562-9.562l-18.086-31.32a7 7 0 0 0-12.121 7l18.082 31.32a7.019 7.019 0 0 0 4.25 3.266 7.005 7.005 0 0 0 5.316-.704zm-64.747 64.747a7.004 7.004 0 0 0-2.562-9.567l-31.32-18.082a6.987 6.987 0 0 0-7.028-.031 6.99 6.99 0 0 0-3.511 6.086 6.987 6.987 0 0 0 3.539 6.066l31.32 18.086a6.977 6.977 0 0 0 5.312.7 6.988 6.988 0 0 0 4.25-3.262zm315.852 2.562l31.32-18.086a7 7 0 0 0-7-12.121l-31.32 18.082a6.998 6.998 0 0 0-3.539 6.07 7.007 7.007 0 0 0 3.512 6.086 7.006 7.006 0 0 0 7.027-.03zM325 71.293l18.086-31.32a7.006 7.006 0 0 0-2.586-9.524 7.002 7.002 0 0 0-9.54 2.524l-18.085 31.32a7.006 7.006 0 0 0-.031 7.027 7.011 7.011 0 0 0 6.086 3.512 6.998 6.998 0 0 0 6.07-3.539zM234 447v-36.164c0-3.867-3.133-7-7-7s-7 3.133-7 7V447c0 3.867 3.133 7 7 7s7-3.133 7-7zm220-220c0-3.867-3.133-7-7-7h-36.164c-3.867 0-7 3.133-7 7s3.133 7 7 7H447c3.867 0 7-3.133 7-7zm-403.836 0c0-3.867-3.133-7-7-7H7c-3.867 0-7 3.133-7 7s3.133 7 7 7h36.164c3.867 0 7-3.133 7-7zM340.5 423.59a7.002 7.002 0 0 0 2.563-9.567l-18.083-31.32a6.998 6.998 0 0 0-6.07-3.539 7.007 7.007 0 0 0-6.086 3.512 7.006 7.006 0 0 0 .031 7.027l18.086 31.32a6.997 6.997 0 0 0 9.563 2.566zm83.09-83.09a6.997 6.997 0 0 0-2.567-9.563l-31.32-18.085a7.006 7.006 0 0 0-7.027-.032 7.007 7.007 0 0 0-3.512 6.086 6.998 6.998 0 0 0 3.54 6.07l31.32 18.083a6.998 6.998 0 0 0 9.566-2.563zm-383.602 2.563l31.32-18.083a6.998 6.998 0 0 0 3.54-6.07 6.998 6.998 0 0 0-10.54-6.055l-31.32 18.086a6.988 6.988 0 0 0-3.539 6.07 6.984 6.984 0 0 0 3.512 6.083 6.987 6.987 0 0 0 7.027-.032zm83.086 77.964l18.086-31.32a7.006 7.006 0 0 0 .031-7.027 7.007 7.007 0 0 0-6.086-3.512 6.998 6.998 0 0 0-6.07 3.539l-18.082 31.32a6.987 6.987 0 0 0-.031 7.028 6.99 6.99 0 0 0 6.086 3.511 6.987 6.987 0 0 0 6.066-3.539zm0 0' fill='%23fabe02'/%3E%3Cpath d='M344.027 325.922a7.004 7.004 0 0 1-6.285-3.945 6.997 6.997 0 0 1 .79-7.375 141.802 141.802 0 0 0 6.878-9.54 7.005 7.005 0 0 1 9.703-1.976 7.002 7.002 0 0 1 1.98 9.703 157.702 157.702 0 0 1-7.558 10.469 7.002 7.002 0 0 1-5.508 2.664zm-11.644 6.371a6.997 6.997 0 0 0-9.887-.461c-46.844 42.676-116.316 49.094-170.187 15.723C98.44 314.18 73.25 249.117 90.602 188.172 107.949 127.222 163.629 85.184 227 85.188c3.867 0 7-3.133 7-7s-3.133-7-7-7c-69.617.007-130.785 46.199-149.844 113.156-19.058 66.96 8.617 138.437 67.797 175.105s135.504 29.625 186.977-17.25a7.009 7.009 0 0 0 2.285-4.86 6.986 6.986 0 0 0-1.828-5.046zm-80.797-244.98a141.93 141.93 0 0 1 99.254 70.648 141.933 141.933 0 0 1 7.922 121.574 6.998 6.998 0 0 0 3.898 9.102 7.003 7.003 0 0 0 9.106-3.903 155.955 155.955 0 0 0-8.696-133.582 155.95 155.95 0 0 0-109.066-77.617 7 7 0 0 0-7.918 5.727 6.998 6.998 0 0 0 5.52 8.062zM133.8 297.758a7 7 0 1 0 11.148-8.469 113.97 113.97 0 0 1-3.11-4.312 6.997 6.997 0 0 0-9.726-1.836 6.997 6.997 0 0 0-1.836 9.726 130.668 130.668 0 0 0 3.524 4.89zm-2.196-31.82A102.37 102.37 0 0 1 124 227c0-3.867-3.133-7-7-7s-7 3.133-7 7a116.364 116.364 0 0 0 8.652 44.234 6.996 6.996 0 0 0 9.13 3.832 6.998 6.998 0 0 0 3.831-9.125zM220 117c0 3.867 3.133 7 7 7 36.785.074 70.762 19.684 89.223 51.5a7.001 7.001 0 0 0 12.117-7.012C307.367 132.355 268.777 110.082 227 110c-3.867 0-7 3.133-7 7zm7-66.836c3.867 0 7-3.133 7-7V7c0-3.867-3.133-7-7-7s-7 3.133-7 7v36.164c0 3.867 3.133 7 7 7zm-98 21.129a6.998 6.998 0 0 0 6.07 3.539 7.011 7.011 0 0 0 6.086-3.512 7.006 7.006 0 0 0-.031-7.027l-18.086-31.32a7.002 7.002 0 0 0-9.539-2.524 7.006 7.006 0 0 0-2.586 9.524zm-96.023 51.77l31.32 18.085a6.997 6.997 0 0 0 9.52-2.585 6.997 6.997 0 0 0-2.52-9.54l-31.32-18.082a6.987 6.987 0 0 0-7.028-.03 6.986 6.986 0 0 0-3.511 6.085 6.987 6.987 0 0 0 3.539 6.067zm353.238 19.023c1.23 0 2.433-.324 3.496-.941l31.32-18.086a7.002 7.002 0 0 0 2.524-9.54 7 7 0 0 0-9.524-2.581l-31.32 18.082a7.002 7.002 0 1 0 3.504 13.066zm-70.817-68.23a7.005 7.005 0 0 0 5.317.703 7.019 7.019 0 0 0 4.25-3.266l18.082-31.32a7 7 0 0 0-12.121-7l-18.086 31.32a7 7 0 0 0 2.558 9.562zM220 410.835V447c0 3.867 3.133 7 7 7s7-3.133 7-7v-36.164c0-3.867-3.133-7-7-7s-7 3.133-7 7zM403.836 227c0 3.867 3.133 7 7 7H447c3.867 0 7-3.133 7-7s-3.133-7-7-7h-36.164c-3.867 0-7 3.133-7 7zM7 234h36.164c3.867 0 7-3.133 7-7s-3.133-7-7-7H7c-3.867 0-7 3.133-7 7s3.133 7 7 7zm323.938 187.023a7 7 0 0 0 9.539 2.524 7.001 7.001 0 0 0 2.582-9.524l-18.082-31.32a6.998 6.998 0 0 0-6.07-3.539 7.007 7.007 0 0 0-6.087 3.512 7.006 7.006 0 0 0 .032 7.027zm58.765-108.168a7.006 7.006 0 0 0-7.027-.03 7.007 7.007 0 0 0-3.512 6.085 6.998 6.998 0 0 0 3.54 6.07l31.32 18.083a7.001 7.001 0 0 0 9.523-2.583 7.002 7.002 0 0 0-2.524-9.539zm-325.414 0l-31.32 18.086a6.988 6.988 0 0 0-3.54 6.07 6.984 6.984 0 0 0 3.512 6.083 6.987 6.987 0 0 0 7.028-.031l31.32-18.083a6.998 6.998 0 0 0 3.54-6.07 7.007 7.007 0 0 0-3.513-6.086 7.006 7.006 0 0 0-7.027.031zM129 382.707l-18.086 31.32a6.996 6.996 0 0 0-.027 7.028 6.984 6.984 0 0 0 6.082 3.511 6.998 6.998 0 0 0 6.07-3.539l18.086-31.32a7.006 7.006 0 0 0 .031-7.027 7.011 7.011 0 0 0-6.086-3.512 6.998 6.998 0 0 0-6.07 3.539zm0 0' fill='%23002d42'/%3E%3C/svg%3E");
-			-webkit-background-size: contain;
-			background-size: contain;
-			background-position: center;
-			background-repeat: no-repeat;
-		}
+		@media screen and (max-height: 690px) {
+			.temperature {
+				padding-top: 30px;
+			}
 
-		.temperature .description,
-		.temperature .feelings {
-			font-family: 'TT Polls', sans-serif;
-			font-size: 20px;
-			font-weight: 300;
-			color: #eee;
-		}
+			.temperature .inner .icon {
+				width: 50px;
+				height: 50px;
+			}
 
-		@media screen and (max-height: 660px) {
-			.temperature .description,
-			.temperature .feelings {
-				display: none;
+			.temperature .inner p {
+				font-size: 25px;
 			}
 		}
 
-		@media screen and (max-height: 520px) {
-			.temperature .your-city,
-			.temperature .location {
-				display: none;
+		@media screen and (max-height: 600px) {
+			.temperature {
+				padding-top: 55px;
+			}
+
+			.temperature .inner p,
+			.temperature .inner .icon{
+				display: inline-block;
+				vertical-align: top;
+			}
+
+			.temperature .inner .icon {
+				margin-bottom: 0;
+				margin-right: 10px;
+			}
+
+			.temperature .inner p {
+				text-align: right;
 			}
 		}
 
-		@media screen and (max-height: 390px) {
-			.temperature .degrees {
-				padding-right: 40px;
-				font-size: 40px;
-			}
-
-			.temperature .degrees::after {
-				width: 40px;
-				height: 40px;
+		@media screen and (max-height: 480px) {
+			.temperature {
+				padding-top: 30px;
 			}
 		}
 
-		@media screen and (max-height: 320px) {
-			.temperature .degrees {
+		@media screen and (max-height: 420px) {
+			.temperature .inner p {
+				font-size: 20px;
+				line-height: 25px;
+			}
+
+			.temperature .inner .icon {
+				width: 45px;
+				height: 45px;
+			}
+		}
+
+		@media screen and (max-height: 380px) {
+			.temperature .inner button {
 				display: none;
 			}
 		}
@@ -608,11 +601,10 @@
 	<div class="inner blured">
 		<div class="temperature">
 			<div class="inner">
-				<p class="your-city">Погода в вашем городе</p>
-				<button class="location" disabled>Уточнить местоположение</button>
-				<p class="degrees">+21&deg;</p>
-				<p class="description">Ясно</p>
-				<p class="feelings">Ощущается как +40&deg;</p>
+				<button disabled>
+					<div class="icon"></div>
+					<p>Узнать погоду<br>в вашем городе</p>
+				</button>
 			</div>
 		</div>
 		<div class="placeholder"></div>
@@ -634,17 +626,17 @@
 				</tr>
 				<tr>
 					<td><p>59%</p></td>
-					<td><p>+21&deg;</p></td>
-					<td><p>+22&deg;</p></td>
-					<td><p>+22&deg;</p></td>
-					<td><p>+21&deg;</p></td>
+					<td><p></p></td>
+					<td><p></p></td>
+					<td><p></p></td>
+					<td><p></p></td>
 				</tr>
 			</table>
 		</div>
 	</div>
 	<div class="btn-wrapper" id="btn-wrapper">
 		<button class="btn" id="wapSubmitBtn" type="submit">
-				<span>Слушать</span>
+				<span>Узнать</span>
 		</button>
 		<div th:if="${useSmsLink == null || useSmsLink == 'false'}">
 			<span class="price" th:switch="${evalRequestType}">
